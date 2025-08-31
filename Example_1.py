@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 
 # Two define for the two linear equations
 def equation_1(x):
-    return 3 * x + 2
+    return 4 * x + 2
 
 def equation_2(x):
-    return (3/2) * x
+    return 2 * x
 
 
 # To generate x values
@@ -21,8 +21,8 @@ y2 = equation_2(x)
 plt.figure(figsize=(8, 6))
 
 # Plotting the two equations
-plt.plot(x, y1, label=r'$y = 3x + 2$', color='blue', linewidth=2)
-plt.plot(x, y2, label=r'$yr = (3/2)x$', color='green', linewidth=2)
+plt.plot(x, y1, label=r'$y = 4x + 2$', color='blue', linewidth=2)
+plt.plot(x, y2, label=r'$yr = 2x$', color='green', linewidth=2)
 
 # Adding labels and title
 plt.xlabel('x')
