@@ -12,29 +12,28 @@ def equation_2(x):
 # Generate x values
 x = np.linspace(-10, 10, 10)
 
-# Calculate y values for both equations
+# Calculating y values for both equations
 y1 = equation_1(x)
 y2 = equation_2(x)
 
-# Create the plot
+# Creating the plot
 plt.figure(figsize=(8, 6))
 
-# Plot the two equations
+# Plotting the two equations
 plt.plot(x, y1, label=r'$\hat{y} = 0.62x + 7.520$', color='black', linewidth=2)
 plt.plot(x, y2, label=r'$\hat{y_r} = 0.31x + 7.520$', color='purple', linewidth=2)
 
-# Add labels and title
+# Adding labels and lim
 plt.xlabel('x')
 plt.ylabel('y')
-# plt.title('Plot of Two Linear Equations')
 
 plt.ylim(0, 15)
 
-# Add a legend
+# Adding a legend
 plt.legend()
 
-# # Show the grid
+# # Showing the grid
 plt.grid(True)
 
-# # Display the plot
+# # Displaying the plot
 plt.show()
