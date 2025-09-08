@@ -19,7 +19,7 @@ plt.plot(x, y_r2, label='sin(x) - 0.5', color='green')
 plt.xlabel('x')
 plt.ylabel('y')
 
-plt.ylim(-1, 1)
+plt.ylim(-1.05, 1.05)
 plt.xlim(-6.35,6.35)
 
 # Adding grid and legend
