@@ -31,11 +31,10 @@ plt.plot(x, y2, label=r'$yr1(x) = 2x + 0$', color='red', linewidth=2)
 plt.plot(x, y3, label=r'$yr2(x) = 2x + 2$', color='green', linewidth=2)
 
 
-# Adding labels and title
+# Adding labels and lim
 plt.xlabel('x')
 plt.ylabel('y')
 
-# plt.title('Plot of Two Linear Equations')
 plt.ylim(-50, 50)
 
 # Adding a legend
