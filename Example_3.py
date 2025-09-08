@@ -24,11 +24,9 @@ plt.figure(figsize=(8, 6))
 plt.plot(x, y1, label=r'$c(x) = 400x + 800$', color='brown', linewidth=2)
 plt.plot(x, y2, label=r'$c(x)r = 200x + 800$', color='orange', linewidth=2)
 
-# Adding labels and title
+# Adding labels and lim
 plt.xlabel('x')
 plt.ylabel('y')
-
-# plt.title('Plot of Two Linear Equations')
 
 plt.ylim(-10000, 10000)
 
