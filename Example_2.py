@@ -1,42 +1,30 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Two define for the two linear equations
-def equation_1(x):
-    return 400 * x + 800
+# Creating an array of x values from -2π to 2π
+x = np.linspace(-2 * np.pi, 2 * np.pi, 1000)
 
-def equation_2(x):
-    return 200 * x + 800
-
-
-# To generate x values
-x = np.linspace(-90, 90, 100)
-
-
-# To calculate "y" values for both equations
-y1 = equation_1(x)
-y2 = equation_2(x)
+# Computing y values
+y_sin = np.sin(x)
+y_r1 = np.sin(x)*0.5 + 0.5
+y_r2 = np.sin(x)*0.5 - 0.5
 
 # Creating the plot
-plt.figure(figsize=(8, 6))
+plt.figure(figsize=(10, 6))
+plt.plot(x, y_sin, label='sin(x)', color='blue')
+plt.plot(x, y_r1, label='sin(x) + 0.5', color='red')
+plt.plot(x, y_r2, label='sin(x) - 0.5', color='green')
 
-# Plotting the two equations
-plt.plot(x, y1, label=r'$c(x) = 400x + 800$', color='brown', linewidth=2)
-plt.plot(x, y2, label=r'$c(x)r = 200x + 800$', color='orange', linewidth=2)
-
-# Adding labels and title
+# labels
 plt.xlabel('x')
 plt.ylabel('y')
 
-# plt.title('Plot of Two Linear Equations')
+plt.ylim(-1, 1)
+plt.xlim(-6.35,6.35)
 
-plt.ylim(-10000, 10000)
-
-# Adding a legend
+# Adding grid and legend
+plt.grid(True)
 plt.legend()
 
-# Showing the grid
-plt.grid(True)
-
-# Displaying the plot
+# Showing the plot
 plt.show()
