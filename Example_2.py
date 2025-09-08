@@ -15,7 +15,7 @@ plt.plot(x, y_sin, label='sin(x)', color='blue')
 plt.plot(x, y_r1, label='sin(x) + 0.5', color='red')
 plt.plot(x, y_r2, label='sin(x) - 0.5', color='green')
 
-# labels
+# labels and lims
 plt.xlabel('x')
 plt.ylabel('y')
 
