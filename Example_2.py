@@ -13,8 +13,8 @@ y_r3 = np.sin(x)*0.5 + 0
 # Creating the plot
 plt.figure(figsize=(10, 6))
 plt.plot(x, y_sin, label='sin(x)', color='blue')
-plt.plot(x, y_r1, label='sin(x) + 0.5', color='red')
-plt.plot(x, y_r2, label='sin(x) - 0.5', color='green')
+plt.plot(x, y_r1, label='0.5*sin(x) + 0.5', color='red')
+plt.plot(x, y_r2, label='0.5*sin(x) - 0.5', color='green')
 plt.plot(x, y_r3, label='0.5*sin(x) + 0', color='orange')
 
 # labels and lims
