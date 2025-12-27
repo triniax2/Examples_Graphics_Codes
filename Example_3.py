@@ -1,40 +1,43 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Two define for the two linear equations
+# Define the two equations
 def equation_1(x):
-    return 400 * x + 800
+    return 600 * x + 3000
 
 def equation_2(x):
-    return 200 * x + 800
+    return 300 * x + 3000
 
+# x-axis range
+x_min = -30
+x_max = 30
+num_points = 200
 
-# To generate x values
-x = np.linspace(-90, 90, 100)
+# Generate x values
+x = np.linspace(x_min, x_max, num_points)
 
-
-# To calculate "y" values for both equations
+# Calculate y values
 y1 = equation_1(x)
 y2 = equation_2(x)
 
-# Creating the plot
+# Create the plot
 plt.figure(figsize=(8, 6))
 
-# Plotting the two equations
-plt.plot(x, y1, label=r'$c(x) = 400x + 800$', color='brown', linewidth=2)
-plt.plot(x, y2, label=r'$c(x)r = 200x + 800$', color='orange', linewidth=2)
+# Plot the equations
+plt.plot(x, y1, label=r'$C_r(x) = 600x + 3000$', color='blue', linewidth=2)
+plt.plot(x, y2, label=r'$C_o(x) = 300x + 3000$', color='orange', linewidth=2)
 
-# Adding labels and lim
+# Labels
 plt.xlabel('x')
-plt.ylabel('y')
+plt.ylabel('C(x)')
 
-plt.ylim(-10000, 10000)
+# Axis limits
+plt.xlim(x_min, x_max)
+plt.ylim(-2000, 6000)
 
-# Adding a legend
+# Legend and grid
 plt.legend()
-
-# Showing the grid
 plt.grid(True)
 
-# Displaying the plot
+# Show plot
 plt.show()
