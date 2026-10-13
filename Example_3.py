@@ -25,7 +25,7 @@ plt.figure(figsize=(8, 6))
 
 # Plot the equations
 plt.plot(x, y1, label=r'$C_r(x) = 600x + 3000$', color='blue', linewidth=2)
-plt.plot(x, y2, label=r'$C_o(x) = 300x + 3000$', color='orange', linewidth=2)
+plt.plot(x, y2, label=r'$C_o(x) = 300x + 3000$', color='green', linewidth=2)
 
 # Labels
 plt.xlabel('x')
