@@ -23,7 +23,7 @@ plt.figure(figsize=(8, 6))
 
 # Plotting the two equations
 plt.plot(x, y1, label=r'$y(x) = 3x + 6$', color='blue', linewidth=2)
-plt.plot(x, y2, label=r'$yr(x) = 6x + 0$', color='orange', linewidth=2)
+plt.plot(x, y2, label=r'$yr(x) = 6x + 0$', color='green', linewidth=2)
 
 
 # Adding labels 
