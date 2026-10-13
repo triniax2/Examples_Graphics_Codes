@@ -11,7 +11,7 @@ y_rsin = np.sin(x)*2 + 0
 # Plotting the two equations
 plt.figure(figsize=(10, 6))
 plt.plot(x, y_sin, label='y=sin(x)', color='blue')
-plt.plot(x, y_rsin, label='y_r=2*sin(x) + 0', color='orange')
+plt.plot(x, y_rsin, label='y_r=2*sin(x) + 0', color='green')
 
 # labels and lims
 plt.xlabel('x')
